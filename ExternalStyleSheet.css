@@ -1,0 +1,126 @@
+body,textarea
+{
+
+  background-image: -webkit-radial-gradient(circle,#1EBBD7, #189AD3, #2c3e50 );
+  background-image: -o-radial-gradient(circle,#1EBBD7, #189AD3, #2c3e50 );
+  background-image: radial-gradient(circle,#1EBBD7, #189AD3, #2c3e50 );
+  background-color: #2c3e50;
+	color: lightgreen;
+	font-family: 'Audiowide', sans-serif;
+	text-shadow: 1px 1px 2px black;
+}
+textarea
+{
+	background:transparent;
+	border: 1px solid black;
+	resize: none;
+	word-spacing: 1.5rem;
+	font-family: 'Audiowide', cursive;
+	font-weight: 600;
+	font-size: 1.9rem;
+	text-align: center;
+	color: lightgreen;
+	text-shadow: 1px 1px 4px #686868;
+	border: 1px groove lightgreen;
+	box-shadow: 2px 2px 10px white;
+}
+
+h1
+{
+	text-align: center;
+	-webkit-text-stroke: 2px lightgreen;
+	font-size: 3rem;
+	color: lightgreen;
+	font-family: 'Audiowide', sans-serif;
+	text-shadow: 1px 1px 2px lightgreen;
+}
+ table tr, table td
+ {
+    padding: 0px; /* Apply cell padding */
+    margin:0px;
+ }
+td
+{
+	max-width: 50%;
+	text-align: center;
+	font-size: 2rem;
+}
+#result
+{
+	text-align: center;
+	visibility: hidden;
+}
+#scoreBoard
+{
+	visibility: hidden;
+	text-align: center;
+}
+
+table
+{
+	float: left;
+}
+#comroc,#compap,#comsci
+{
+	visibility: hidden;	
+}
+img
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.computerSide
+{ 
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px white;
+}
+/*Editing the submit button and reset button*/
+input[type=submit], input[type=reset]{
+  padding: 15px 25px;
+  width: 100px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #f78a25;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #686868;
+}
+/*Editing the submit button*/
+input[type=submit]
+{background-color: lightgreen}
+
+input[type=submit]:hover{
+  background-color: lightgreen;
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 0 5px #686868;
+  transform: translateY(4px);
+}
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+	
+	border: 2px solid powderblue;
+	box-shadow: 1px 1px 10px powderblue;
+	-webkit-transition: width 0.2s linear 0s;
+	transition:  width 0.2s linear 0s; 
+	width: 180px;
+	
+}

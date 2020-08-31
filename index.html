@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+<!-- 
+=======================================================================
+Document:         XHTML_template.html
+Author:           YOUR_NAME_HERE
+Student Number:   YOUR_STUDENT_CWID_HERE
+Organization:     The University of Louisiana at Monroe
+Class:            CLASS, SEMESTER, YEAR
+Assignment:       Assignemnt XX
+Due Date:         MONTH, DAY, YEAR
+
+Description:      This document displays ...
+
+Honor Statement:  My signature below attests to the fact that I have
+                  neither given nor received aid on this project.
+
+
+X _____________________________________________________________________
+
+
+=======================================================================
+-->
+
+<head>
+
+<title>ROCK | PAPER | SCISSORS</title>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="description" content="This is a rock paper scissors game" />
+<meta name="keywords" content="KEYWORDS,SEPARATED,BY,COMMAS,HERE" />
+<meta name="author" content="YOUR_NAME_HERE" />
+<meta name="revised" content="DATE_HERE" />
+<link rel = "stylesheet" type = "text/css" href="ExternalStyleSheet.css">
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Merienda|Open+Sans:300,400,600,700&display=swap" rel="stylesheet"> 
+<script src = "JavaScript.js"></script>
+</head>
+
+<body>
+	<h1>ROCK, PAPER, SCISSORS</h1>
+
+<table cellpadding = "20" cellspacing = "20" width="100%">
+	<div class="playerSide">
+		<tr>
+			<td colspan="3" >
+				Your Pick
+			</td>
+			<td colspan="3" >
+				Computer's Pick
+			</td>
+		</tr>
+	<tr>
+		<form id="game" action="JavaScript:formProcessor()" method="get">
+		<td width="20%">
+			<label>
+				<input type = "radio" name = "rps" value="rock"checked="checked" /> <img src="rock.png" alt="an image of a rock" width="150">
+			</label>
+		</td>
+		
+		<td width="20%">
+			<label>
+				<input type = "radio" name = "rps" value="paper" /> <img src="paper.png" alt="an image of a paper" width="150">
+			</label>
+		</td>
+		
+		<td width="20%">
+			<label>
+				<input type = "radio" name = "rps" value="sissors" /> <img src="scissors.png" alt="an image of a scissor" width="150">
+			</label>
+		</td>
+	</div>
+		
+			<td width="40%">
+				<div class = "computerSide">
+				<div id="comroc"><img src="rock.png" alt="an image of a rock" width="150"></div>
+				<div id="compap" ><img src="paper.png" alt="	animage of a paper" width="150">	</div>
+				<div id="comsci"><img src="scissors.png" alt="an image of a scissor" width="150"></div>
+					</div>
+			</td>
+		
+		
+		<tr>
+			<td colspan="3"><input id = "submit" type = "submit" name = "submit" value="Done" /></td>
+		</tr>
+	
+		</table>
+		
+
+		 <div id ="result">         
+		 	<textarea readonly name="response"cols="50">
+         	</textarea>
+      		
+      	</div>
+      	<div id="scoreBoard">         
+				<textarea readonly name="score" rows="2" cols="50">
+    	  		</textarea>
+	  		</div>
+	</form>
+	
+
+</body>
+
+</html>
